@@ -39,3 +39,15 @@ export default function OutputBox({ output }) {
     </div>
   )
 }
+
+const styles = {
+  output: {
+    marginTop: "20px",
+    padding: "15px",
+    backgroundColor: "#1e1e1e",
+    borderRadius: "10px",
+    maxWidth: "80%",
+    marginInline: "auto",
+  },
+}
+
