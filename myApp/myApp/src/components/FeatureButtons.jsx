@@ -29,8 +29,4 @@ const styles = {
     color: "white",
     cursor: "pointer",
   },
-  btnHover: {
-    backgroundColor: "#555",
-    scale: "1.05",
-  },
 }

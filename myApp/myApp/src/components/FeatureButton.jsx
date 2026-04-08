@@ -6,9 +6,6 @@ export default function FeatureButtons({ setMode }) {
       <button style={styles.btn} onClick={() => setMode("email")}>📧 Email</button>
       <button style={styles.btn} onClick={() => setMode("quiz")}>📚 Quiz</button>
       <button style={styles.btn} onClick={() => setMode("simple")}>🧠 Simple</button>
-      <button style={styles.btn} onClick={() => setMode("points")}>📌 Key Points</button>
-      <button style={styles.btn} onClick={() => setMode("examples")}>📖 Examples</button>
-      <button style={styles.btn} onClick={() => setMode("exam")}>📝 Exam</button>
     </div>
   );
 }
@@ -28,9 +25,5 @@ const styles = {
     backgroundColor: "#333",
     color: "white",
     cursor: "pointer",
-  },
-  btnHover: {
-    backgroundColor: "#555",
-    scale: "1.05",
   },
 }

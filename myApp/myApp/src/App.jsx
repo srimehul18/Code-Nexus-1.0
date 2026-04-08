@@ -4,7 +4,7 @@ import FeatureButtons from "./components/FeatureButtons";
 import InputBox from "./components/InputBox";
 import OutputBox from "./components/OutputBox";
 import Loader from "./components/Loader";
-import { callAI as fetchAI } from "./api";
+// import { callAI as fetchAI } from "./api";
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -81,26 +81,9 @@ export default function App() {
 
       <h3>Current Mode: {mode.toUpperCase()}</h3>
 
-      <div style={styles.toggleWrapper}>
-        <button
-          style={{
-            ...styles.toggleBtn,
-            backgroundColor: level === "normal" ? "#4CAF50" : "#333",
-          }}
-          onClick={() => setLevel("normal")}
-        >
-          🎓 Normal
-        </button>
-
-        <button
-          style={{
-            ...styles.toggleBtn,
-            backgroundColor: level === "beginner" ? "#4CAF50" : "#333",
-          }}
-          onClick={() => setLevel("beginner")}
-        >
-          👶 Beginner
-        </button>
+      <div>
+        <button onClick={() => setLevel("normal")}>🎓 Normal</button>
+        <button onClick={() => setLevel("beginner")}>👶 Beginner</button>
       </div>
 
       <FeatureButtons setMode={setMode} />
@@ -124,23 +107,8 @@ const styles = {
   container: {
     textAlign: "center",
     padding: "20px",
-    backgroundColor: "#383b4e",
+    backgroundColor: "#121212",
     color: "white",
     minHeight: "100vh",
   },
-  toggleWrapper: {
-  display: "flex",
-  justifyContent: "center",
-  gap: "15px",
-  margin: "15px 0",
-},
-
-toggleBtn: {
-  padding: "10px 20px",
-  borderRadius: "8px",
-  border: "none",
-  color: "white",
-  cursor: "pointer",
-  fontSize: "15px",
-},
 };
