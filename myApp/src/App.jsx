@@ -4,7 +4,7 @@ import FeatureButtons from "./components/FeatureButtons";
 import InputBox from "./components/InputBox";
 import OutputBox from "./components/OutputBox";
 import Loader from "./components/Loader";
-import { callAI as fetchAI } from "./api";
+// import { callAI as fetchAI } from "./api";
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -43,7 +43,7 @@ export default function App() {
       case "exam":
         base = "Write a short exam answer: ";
         break;
-        
+
       default:
         base = "";
     }
