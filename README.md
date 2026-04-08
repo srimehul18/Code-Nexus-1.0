@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code-Nexus-1.0
 # 🚀 AI Student Toolkit Pro
 
