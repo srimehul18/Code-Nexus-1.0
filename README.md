@@ -59,7 +59,7 @@ AI Student Toolkit Pro introduces a **Prompt Refinement System** that:
 * Step-by-step explanations
 * Beginner-friendly answers
 * Simplifies complex concepts
-
+https://github.com/srimehul18/Code-Nexus-1.0/tree/main
 ---
 
 ### 📧 Email Generator
@@ -103,7 +103,6 @@ AI Student Toolkit Pro introduces a **Prompt Refinement System** that:
 ## 🎨 UI/UX Highlights
 
 * Clean and modern interface
-* Fast and responsive interactions
 * Intuitive workflow for all features
 * Designed for a seamless student experience
 
