@@ -90,3 +90,13 @@ export default function App() {
     </div>
   );
 }
+
+const styles = {
+  container: {
+    textAlign: "center",
+    padding: "20px",
+    backgroundColor: "#121212",
+    color: "white",
+    minHeight: "100vh",
+  },
+};
