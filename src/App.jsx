@@ -124,7 +124,7 @@ const styles = {
   container: {
     textAlign: "center",
     padding: "20px",
-    background: "linear-gradient(to right, #ff1b6b 0%, #45caff 100%)",
+    backgroundColor: "#383b4e",
     color: "white",
     minHeight: "100vh",
   },
