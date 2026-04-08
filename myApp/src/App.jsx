@@ -11,4 +11,27 @@ export default function App() {
   const [output, setOutput] = useState("");
   const [mode, setMode] = useState("notes");
   const [loading, setLoading] = useState(false);
-  const [level, setLevel] = useState("normal");}
+  const [level, setLevel] = useState("normal");
+
+const getPrompt = () => {
+    let base = "";
+
+    switch (mode) {
+      case "notes":
+        base = "Convert into structured notes with headings and bullet points: ";
+        break;
+      case "doubt":
+        base = "Explain step by step clearly: ";
+        break;
+      case "email":
+        base = "Write a formal email: ";
+        break;
+      case "quiz":
+        base = "Create 5 MCQs with answers: ";
+        break;
+      case "simple":
+        base = "Explain in very simple words: ";
+        break;
+      default:
+        base = "";
+    }
