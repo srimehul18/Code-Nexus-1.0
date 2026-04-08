@@ -11,4 +11,4 @@ export default function App() {
   const [output, setOutput] = useState("");
   const [mode, setMode] = useState("notes");
   const [loading, setLoading] = useState(false);
-  const [level, setLevel] = useState("normal");
+  const [level, setLevel] = useState("normal");}
