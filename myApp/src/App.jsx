@@ -32,6 +32,18 @@ export default function App() {
       case "simple":
         base = "Explain in very simple words: ";
         break;
+      case "points":
+        base = "Give key points: ";
+        break;
+
+      case "examples":
+        base = "Give real life examples: ";
+        break;
+
+      case "exam":
+        base = "Write a short exam answer: ";
+        break;
+        
       default:
         base = "";
     }
