@@ -57,3 +57,36 @@ export default function App() {
     setOutput(result);
     setLoading(false);
   };
+
+  return (
+    <div style={styles.container}>
+      <Navbar />
+
+      <p style={{ maxWidth: "600px", margin: "auto" }}>
+        Students waste time searching multiple platforms. Our AI toolkit provides
+        instant notes, explanations, quizzes, and writing help in one place.
+      </p>
+
+      <h3>Current Mode: {mode.toUpperCase()}</h3>
+
+      <div>
+        <button onClick={() => setLevel("normal")}>🎓 Normal</button>
+        <button onClick={() => setLevel("beginner")}>👶 Beginner</button>
+      </div>
+
+      <FeatureButtons setMode={setMode} />
+
+      <InputBox input={input} setInput={setInput} callAI={handleAI} />
+
+      <p style={{ opacity: 0.7 }}>
+        Try: Photosynthesis | Newton Laws | Leave application
+      </p>
+
+      <p style={{ fontSize: "12px", opacity: 0.6 }}>
+        <b>AI Prompt:</b> {getPrompt()}
+      </p>
+
+      {loading ? <Loader /> : <OutputBox output={output} />}
+    </div>
+  );
+}
