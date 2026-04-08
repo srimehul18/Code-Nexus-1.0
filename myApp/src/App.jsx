@@ -13,7 +13,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [level, setLevel] = useState("normal");
 
-const getPrompt = () => {
+  const getPrompt = () => {
     let base = "";
 
     switch (mode) {
@@ -35,3 +35,25 @@ const getPrompt = () => {
       default:
         base = "";
     }
+
+    if (level === "beginner") {
+      base += "Explain like I am a beginner student. ";
+    }
+
+    return base + input;
+  };
+
+  const handleAI = async () => {
+    if (!input) {
+      alert("Please enter something!");
+      return;
+    }
+
+    setLoading(true);
+    setOutput("");
+
+    const result = await fetchAI(getPrompt());
+
+    setOutput(result);
+    setLoading(false);
+  };
