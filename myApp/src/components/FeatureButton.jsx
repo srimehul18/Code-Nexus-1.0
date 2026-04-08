@@ -10,3 +10,20 @@ export default function FeatureButtons({ setMode }) {
   );
 }
 
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "10px",
+    flexWrap: "wrap",
+    marginBottom: "20px",
+  },
+  btn: {
+    padding: "10px 15px",
+    borderRadius: "8px",
+    border: "none",
+    backgroundColor: "#333",
+    color: "white",
+    cursor: "pointer",
+  },
+}
